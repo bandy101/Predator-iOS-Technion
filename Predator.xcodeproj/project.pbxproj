@@ -159,6 +159,7 @@
 		84CC0B01146C32FF00C888ED /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84CC0B00146C32FF00C888ED /* haarcascade_frontalface_alt_tree.xml */; };
 		84CC0B04146C33A900C888ED /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84CC0B03146C33A900C888ED /* haarcascade_frontalface_alt.xml */; };
 		84CC0B0E1470462800C888ED /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CC0B0D1470462700C888ED /* icon.jpg */; };
+		AA567ED41A79CB7D005A3711 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA567ED31A79CB7D005A3711 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -320,6 +321,7 @@
 		84CC0B00146C32FF00C888ED /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
 		84CC0B03146C33A900C888ED /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		84CC0B0D1470462700C888ED /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		AA567ED31A79CB7D005A3711 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 				84C8B6F6145894C60099ED27 /* QuartzCore.framework in Frameworks */,
 				84C8B5C9145726ED0099ED27 /* CoreMedia.framework in Frameworks */,
 				84C8B5CA145726ED0099ED27 /* CoreVideo.framework in Frameworks */,
+				AA567ED41A79CB7D005A3711 /* opencv2.framework in Frameworks */,
 				84C8B5C6145726DB0099ED27 /* Accelerate.framework in Frameworks */,
 				84C8B5C4145726980099ED27 /* AVFoundation.framework in Frameworks */,
 				84C8B59C145725440099ED27 /* UIKit.framework in Frameworks */,
@@ -344,6 +347,7 @@
 		84C8B58C145725440099ED27 = {
 			isa = PBXGroup;
 			children = (
+				AA567ED31A79CB7D005A3711 /* opencv2.framework */,
 				84C8B6F5145894C50099ED27 /* QuartzCore.framework */,
 				84C8B5D5145741250099ED27 /* Tld Classes */,
 				84C8B5CB145729D70099ED27 /* Resources */,
@@ -635,6 +639,8 @@
 /* Begin PBXProject section */
 		84C8B58E145725440099ED27 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 84C8B591145725440099ED27 /* Build configuration list for PBXProject "Predator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -891,6 +897,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Predator/Predator-Prefix.pch";
@@ -928,6 +938,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Predator/Predator-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
